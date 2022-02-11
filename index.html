@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CRUD Operations On Array</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h1><center>CRUD Operations on Array using Javascript</center></h1>
+        <hr>
+        <div class="employee-form">
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" >
+                <div>
+                    <label>Full Name*</label>
+                    <input type="text" name="fullName" id="fullName" required>
+                </div>
+                <div>
+                    <label>Email Id</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label>Salary</label>
+                    <input type="number" name="salary" id="salary">
+                </div>
+                <div>
+                    <label>City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <br/>
+        <div class = "employees-table">
+            <table class="list" id="employeeList">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email Id</th>
+                        <th>Salary</th>
+                        <th>City</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
